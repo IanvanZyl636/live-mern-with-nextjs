@@ -1,0 +1,13 @@
+version: "3"
+services:
+  web:
+    container_name: "live-mern"
+    image: "europe-west4-docker.pkg.dev/effortless-gate-407219/live-mern/live-mern"
+    build:
+      context: .
+    ports:
+      - target: 5000
+        published: 5000
+    environment:
+      NODE_ENV: 'production'
+      PORT: 5000
