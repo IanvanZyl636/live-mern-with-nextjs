@@ -15,8 +15,8 @@ app.prepare()
             res.send('Hello')
         });
 
-        server.get('/protected/*',()=>{}, (req, res) => {
-            return handle(req, res)
+        server.get('*', (req, res) => {
+            return handle(req, res);
         });
 
         server.listen(port, () => {
