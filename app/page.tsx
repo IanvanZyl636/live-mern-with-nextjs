@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 export default function Home() {
-  return (<div>PIEL</div>
+  return (
+      <div>Landing page</div>
   )
 }
